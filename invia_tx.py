@@ -48,7 +48,7 @@ try:
         'gas': 100000,             # Limite gas (sufficiente per i dati)
         'gasPrice': gas_price,
         'nonce': nonce,
-        'data': data_hex,          # Il cognome
+        'data': data_hex,           # Il cognome in esadecimale
         'chainId': chain_id
     }
 
