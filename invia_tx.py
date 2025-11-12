@@ -72,7 +72,7 @@ try:
     print("In attesa della conferma (mining)...")
     
     # Aspetta che la transazione sia inclusa in un blocco
-    tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+    tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash, timeout=120)
     
     print("\n--- CONFERMATA! ---")
     print(f"Inclusa nel blocco numero: {tx_receipt.blockNumber}")
